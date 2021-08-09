@@ -1,10 +1,11 @@
 import React from 'react';
-import {View, Text, SafeAreaView} from 'react-native';
+import {SafeAreaView} from 'react-native';
+import GlobalNavigation from './src/navigation/globalNavigation';
 
 const App = () => (
-    <View style={{flex:1,justifyContent: 'center', alignItems: 'center'}}>
-      <Text>Nested Navigation Example</Text>
-    </View>
+  <SafeAreaView style={{flex: 1, backgroundColor: '#F0F8FF'}}>
+    <GlobalNavigation />
+  </SafeAreaView>
 );
 
 export default App;
